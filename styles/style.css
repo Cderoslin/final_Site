@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: #191d2b;
+  --color-primary: #23272b;
   --color-secondary: #27AE60;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -193,26 +193,12 @@ section {
   position: relative;
 }
 
-.header-content .left-header .h-shape {
-  -webkit-transition: var(--transition-primary);
-  transition: var(--transition-primary);
-  width: 65%;
-  height: 100%;
-  background-color: var(--color-secondary);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 90%;
-  width: 68%;
+  width: 50%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-image: url("/img/Project2.jpg");
   -webkit-transition: var(--transition-primary);
   transition: var(--transition-primary);
 }
