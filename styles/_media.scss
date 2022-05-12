@@ -1,12 +1,57 @@
 
 
 @media screen and (max-width: 600px) {
+
+    .main-title {
+        h2 {
+            font-size: 2.5rem;
+            span{
+                font-size: 2.5rem;
+            }
+            .bg-text {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-grey-5);
+        width: 100%;
+        .control {
+            margin: 1rem .3rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    
+}
+
+@media screen and (max-width: 900px){
+    .portfolios {
+        grid-template-columns: 1fr !important;
+        margin: 3rem;
+    }
+
+    .section {
+        padding: 2rem 2.5rem !important;
+    }
+}
+
+@media screen and (max-width: 970px){
     header {
         padding: 0;
     }
 
     header  .right-header {
-        padding: 2rem !important;
+        padding: 0 !important;
     }
 
     .theme-btn {
@@ -34,22 +79,54 @@
 
     }
 
+}
+
+@media screen and (max-width: 1070px){
+   .main-title {
+       h2 {
+           font-size: 4rem;
+           span {
+               font-size: 4rem;
+           }
+           .bg-text {
+               font-size: 4.5rem;
+           }
+       }
+   }
+
+   .portfolios {
+       grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 1200px){
+    .portfolios {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1432px){
+    header {
+        padding: 0 !important;
+    }
     .section {
-        padding: 2rem 2.5rem !important;
+        padding: 7rem 11rem;
     }
 
-    .controls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--color-grey-5);
-        width: 100%;
-        .control {
-            margin: 1rem .3rem;
+    .contact-content-con {
+        flex-direction: column;
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.5rem;
         }
     }
-    
+
+    .contact-content-con .right-contact .i-c-2 {
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .i-c-2 :last-child {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
 }
